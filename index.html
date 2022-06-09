@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./Assets/css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">The<span style="color: yellow";> FrontEnd </span>Designer</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle">
+            <label class="navbar_icon" for="checkbox_toggle">&#9776;</label>
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    
+    <div class="container1">
+        <div class="left">
+            <h1>Frontend Designer</h1><br>
+            <h3>
+                Frontend design involves creating 
+                the HTML, CSS, and presentational JavaScript code that makes up a user interface. 
+            </h3>
+        </div>
+        <div class="right">
+            <img src="./Assets/img/frontend-development-tools.png" width="100%" height="auto">
+        </div>
+    </div>
+    <hr>
+    <div id="about">
+    <div class="parallax"></div>
+    <div style="height:100%;background-color:rgb(32, 215, 240);font-size:36px">
+    About<br>
+    Web development refers to the building, creating, and maintaining of websites. 
+    It includes aspects such as web design, web publishing, web programming, and database management. 
+    It is the creation of an application that works over the internet i.e. websites.
+    The word Web Development is made up of two words, that is:
+
+Web: It refers to websites, web pages or anything that works over the internet.
+Development: Building the application from scratch.
+ 
+
+Web Development can be classified into two ways:
+
+Frontend Development
+Backend Development
+Frontend Development: The part of a website that the user interacts directly is termed as front end. It is also referred to as the ‘client side’ of the application.
+    </div>
+    <div class="parallax"></div>
+</div>
+
+<div class="services" id="services"style="background-color: rgb(38, 58, 241);">
+   <div class="photos">
+       <div class="l-img">
+           <img src="./Assets/img/1200px-HTML5_logo_and_wordmark.svg.png" width="100%" class="a">
+       </div>
+       <div class="c-img">
+           <img src="./Assets/img/31-312263_m.jpg" width="100%" height="auto" style="border-radius: 50%;">
+       </div>
+
+       <div class="r-img">
+           <img src="./Assets/img/javascript-542e10ea6e.png" width="100%" height="auto" style="border-radius: 50%;">
+       </div>
+       <h3 style="font-size: 30px;">
+        Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. 
+        The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.
+    </h3>
+   </div>
+</div>
+
+<div id="gallary">
+<div class="row">
+<div class="column">
+    <div class="card">
+        <h1>Card 1</h1>
+        <img src="./Assets/img/frontend-development-tools.png" width="100%">
+    </div>
+</div>
+
+<div class="column">
+    <div class="card">
+        <h1>Card 2</h1>
+        <img src="./Assets/img/31-312263_m.jpg" width="60%">
+    </div>
+</div>
+<div class="column">
+    <div class="card">
+        <h1>Card 3</h1>
+        <img src="./Assets/img/top11.png" width="100%">
+    </div>
+</div>
+<div class="column">
+    <div class="card">
+        <h1>Card 4</h1>
+        <img src="./Assets/img/1200px-HTML5_logo_and_wordmark.svg.png" width="60%">
+    </div>
+</div>
+
+</div>
+</div>
+
+<div id="contacts">
+    <form method="post" style="border: 5px solid black;">
+    <h1>Contact Us</h1><br>
+    Name: <input type="text" placeholder="Enter Name"><br><br>
+    Email: <input type="email" placeholder="Enter Email"><br><br>
+    Contact number: <input type="number" placeholder="Enter Mobile number"><br><br>
+    Query:  <textarea placeholder="Enter your query"></textarea><br><br>
+    <button style="background-color: red; border-radius: 2px;">Send</button>
+    </form>
+</div>
+</body>
+</html>

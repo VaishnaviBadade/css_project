@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+ text-decoration: none;
+}
+li{
+ list-style-type: none;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: tomato;
+}
+
+.nav-links a{
+    color: rgb(5, 1, 1);
+
+}
+.nav-links a:hover{
+    color: rgb(247,235,235);
+    
+}
+.logo{
+    font-size: 25px;
+
+}
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li a:hover{
+    color: white;
+    border-radius: 6px;
+}
+.menu li{
+    padding: 5px 15px;
+
+}
+input[type=checkbox]{
+    display: none;
+}
+
+.navbar_icon{
+    display:none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media(max-width:768px){
+    .menu{
+        display:none;
+        position: absolute;
+        background-color: tomato;
+        right:0;
+        left:0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover{
+        display: inline-block;
+        background-color: tomato;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li{
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .navbar_icon{
+        display: block;
+        color: blue;
+    }
+    
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.left{
+    margin-top: 50px;
+    flex: 50%;
+}
+.right{
+    margin-top: 20px;
+    flex: 50%;
+}
+@media screen and (max-width:800px){
+    .container1{
+        flex-direction: column;
+    }
+}
+body, html {
+    height: 100%;
+  }
+.parallax{
+    background-image: url("../img/about_us.jpg");
+    height:400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.l-img{
+    width: 30%;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.a{
+    width: 100%;
+    height: 375px;
+    border-radius: 50%;
+}
+.c-img{
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.r-img{
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+h1{
+    color: blueviolet;
+}
+.container>div{
+    flex: 50%;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:800px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+        .column{
+            width: 20%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 50px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+      .row{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-flow: wrap;   
+      }
+        .card{
+           
+        }
+
+        @media screen and (max-width:1000px)
+        {
+            .column{
+                width: 40%;
+            }
+        }
+            @media screen and (max-width:620px)
+            {
+            .column{
+                width: 80%;
+            }
+
+        }

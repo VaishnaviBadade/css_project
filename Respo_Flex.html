@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./Assets/css/style1.css">
+</head>
+<style>
+h1{
+    color: blueviolet;
+}
+.container>div{
+    flex: 50%;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:800px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+        .column{
+            width: 20%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 50px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+      .row{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-flow: wrap;   
+      }
+        .card{
+           
+        }
+
+        @media screen and (max-width:1000px)
+        {
+            .column{
+                width: 40%;
+            }
+        }
+            @media screen and (max-width:620px)
+            {
+            .column{
+                width: 80%;
+            }
+
+        }
+   
+</style>
+<body>
+    <h1>The Responsive Flex</h1>
+    <div class="container">
+        <div class="r1">left card</div>
+        <div class="r2">right card</div>
+    </div>
+
+
+    <div class="row">
+    <div class="column">
+        <div class="card">
+            <h1>Card 1</h1>
+            <img src="./Assets/img/frontend-development-tools.png" width="100%" height="auto">
+        </div>
+    </div>
+
+    
+    <div class="column">
+        <div class="card">
+            <h1>Card 2</h1>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="card">
+            <h1>Card 3</h1>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="card">
+            <h1>Card 4</h1>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
